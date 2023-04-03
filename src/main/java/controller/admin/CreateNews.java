@@ -30,6 +30,7 @@ public class CreateNews extends HttpServlet {
 //		request.setAttribute("news", newsService.findById(id));
 //		
 		request.setAttribute("bantheloai", cateService.findAll());
+		System.out.println("123");
 		 RequestDispatcher rq = request.getRequestDispatcher("/view/admin/editNews.jsp");
 		rq.forward(request, response);
 	}
